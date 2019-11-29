@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cancelpackage</title>
+	<link rel="stylesheet" type="text/css" href="joinus.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+
+	<style type="text/css">
+		.main-container{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.main-container .sidebar-left{
+			flex: 1;
+		}
+
+		.main-container .sidebar-right{
+			flex: 5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  padding: 0px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 100%) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+	</style>
+
+</head>
+<body>
+	<div class="main-container">
+		
+		<!--	Left Sidebar for Coolapsing navbar      -->
+		<div class="sidebar-left">
+			<nav class="menu">
+    <header>Menu <span>×</span></header>
+    <ol>
+        <li class="menu-item"><a href="home.html">Home</a></li>
+        
+        <li class="menu-item">
+            <a href="joinus.html ">Join us</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="joinus.html">Login</a></li>
+                <li class="menu-item"><a href="joinus.html">Sign-up</a></li>
+                
+            </ol>
+        </li>
+
+        <li class="menu-item">
+            <a href="#0">Booking</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="hotel.html">Hotel</a></li>
+                <li class="menu-item"><a href="package.html">Package</a></li>
+                
+            </ol>
+        </li>
+
+        <li class="menu-item">
+            <a href="#0">Cancel</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="cancelpackage.html">Hotel</a></li>
+                <li class="menu-item"><a href="cancelpackage.html">Package</a></li>
+                
+            </ol>
+        </li>
+        <li class="menu-item"><a href="aboutus.html">About us</a></li>
+        <li class="menu-item"><a href="contactus.html">Contact us</a></li>
+        <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+    </ol>
+    <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+</nav> 
+
+		<!--	Right sidebar for content      -->
+                <div class="sidebar-right">
+			<div class="container" id="container">
+		<div class="container">
+  <div style="text-align:center">
+    <h2> Booking</h2>
+    </div>
+  <div class="row">
+    <div class="column">
+      <img src="delhi.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="ID">Booking ID</label>
+        <input type="text" id="ID" name="ID" placeholder="Your Booking ID..">
+        <input type="date" id="myDate" value="2014-02-09">
+        <input type="text" id="ID" name="ID" placeholder="hotel">
+        <input type="text" id="ID" name="ID" placeholder="user id">
+        <input type="text" id="ID" name="ID" placeholder="location ">
+       
+         <button onclick="myFunction()">Enter Date</button>
+        <p id="demo"></p>
+
+      
+        <label for="Reason">Reason</label>
+        <textarea id="Reason" name="Reason" placeholder="Write something.." style="height:170px"></textarea>  
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDate").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="collapsenav.js"></script>
+	<script type="text/javascript" src="slider.js"></script>
+
+</body>
+</html>
+    

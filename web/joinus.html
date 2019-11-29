@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="joinus.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+
+	<style type="text/css">
+		.main-container{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.main-container .sidebar-left{
+			flex: 1;
+		}
+
+		.main-container .sidebar-right{
+			flex: 5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="main-container">
+		
+		<!--	Left Sidebar for Coolapsing navbar      -->
+		<div class="sidebar-left">
+			<nav class="menu">
+    <header>Menu <span>x</span></header>
+    <ol>
+        <li class="menu-item"><a href="home.html">Home</a></li>
+        
+        <li class="menu-item">
+            <a href="#joinus.html ">Join us</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="joinus.html">Login</a></li>
+                <li class="menu-item"><a href="joinus.html">Sign-up</a></li>
+                
+            </ol>
+        </li>
+
+        <li class="menu-item">
+            <a href="#0">Booking</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="hotel.jsp">Hotel</a></li>
+                <li class="menu-item"><a href="package.jsp">Package</a></li>
+                
+            </ol>
+        </li>
+
+        <li class="menu-item">
+            <a href="#0">Cancel</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="cancelHotel.jsp">Hotel</a></li>
+                <li class="menu-item"><a href="cancelpackage.jsp">Package</a></li>
+                
+            </ol>
+        </li>
+        <li class="menu-item"><a href="aboutus.html">About us</a></li>
+        <li class="menu-item"><a href="contactus.html">Contact us</a></li>
+        <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+    </ol>
+    <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+</nav> 
+		</div>
+
+		<!--	Right sidebar for content      -->
+		<div class="sidebar-right">
+			<div class="container" id="container">
+				<!-- Sign Up form code goes here -->
+				<div class="form-container sign-up-container">
+                                    <form action="reguser.jsp" method="post">
+						<h2>Create Account</h2>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="social"><i class="fa fa-twitter"></i></a>
+      </div>
+      
+      <input type="text" name="fullname" placeholder="FULLNAME"required="">
+             
+              <input type="text" name="address" placeholder="ADDRESS"required="">
+      <input type="email" name="email" placeholder="E-Mail" required="">
+      <input type="NUMBER" name="phone" placeholder="PHONE NUMBER" required="">
+      <input type="password" name="password" placeholder="Password" required="">
+     
+     MALE <input type="RADIO" name="gender" value="MALE" required="">
+       FEMALE <input type="RADIO" name="gender" value="FEMALE" required="">
+       <button type="submit">Sign Up</button>
+					</form>
+				</div>
+				<!-- Sign In form code goes here -->
+				<div class="form-container sign-in-container">
+					<form action="login.jsp" method="post">
+						<h1>Sign in</h1>
+                                                <input type="email" name="email" placeholder="Email" /><br>
+                                                <input type="password" name="password" placeholder="Password" /><br>
+						<a href="forgot.jsp">Forgot your password?</a><br>
+                                                <button type="submit">Sign In</button>
+					</form>
+				</div>
+				<!-- The overlay code goes here -->
+				<div class="overlay-container">
+					<div class="overlay">
+						<div class="overlay-panel overlay-left">
+							<h1>Welcome Back!</h1>
+							<p>
+								To keep connected with us please login with your personal info
+							</p>
+							<button class="ghost" id="signIn">Sign In</button>
+						</div>
+						<div class="overlay-panel overlay-right">
+							<h1>Hello, Friend!</h1>
+							<p>Enter your personal details and start journey with us</p>
+							<button class="ghost" id="signUp">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="collapsenav.js"></script>
+	<script type="text/javascript" src="slider.js"></script>
+
+</body>
+</html>

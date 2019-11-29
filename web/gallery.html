@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="joinus.css">
+        <link rel="stylesheet" href="gallery.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	    <link rel="stylesheet" href="about.css">
+
+	<style type="text/css">
+		.main-container{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.main-container .sidebar-left{
+			flex: 1;
+		}
+
+		.main-container .sidebar-right{
+			flex: 5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="main-container">
+		
+		<!--	Left Sidebar for Coolapsing navbar      -->
+		<div class="sidebar-left">
+			<nav class="menu">
+    <header>Menu <span>×</span></header>
+    <ol>
+        <li class="menu-item"><a href="home.html">Home</a></li>
+        
+        <li class="menu-item">
+            <a href="joinus.html ">Join us</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="joinus.html">Login</a></li>
+                <li class="menu-item"><a href="joinus.html">Sign-up</a></li>
+                
+            </ol>
+        </li>
+
+        <li class="menu-item">
+            <a href="#0">Booking</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="hotel.jsp">Hotel</a></li>
+                <li class="menu-item"><a href="package.jsp">Package</a></li>
+                
+            </ol>
+        </li>
+
+        <li class="menu-item">
+            <a href="#0">Cancel</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="cancelHotel.jsp">Hotel</a></li>
+                <li class="menu-item"><a href="cancelpackage.jsp">Package</a></li>
+                
+            </ol>
+        </li>
+        <li class="menu-item"><a href="aboutus.html">About us</a></li>
+        <li class="menu-item"><a href="contactus.html">Contact us</a></li>
+        <li class="menu-item"><a href="#gallery.html">Gallery</a></li>
+    </ol>
+    <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+</nav> 
+		</div>
+
+		<!--	Right sidebar for content      -->
+		<div class="sidebar-right">
+			<div class="container" id="container">
+				
+				<div class="gallery-section">
+      <div class="inner-width">
+        <h1 color="red">Gallery</h1>
+        <div class="border"></div>
+        <div class="gallery">
+
+          <a href="IMG_20181029_123806.jpg" class="image">
+            <img src="IMG_20181029_123806.jpg" alt="">
+          </a>
+
+          <a href="IMG_20190603_055208.jpg" class="image">
+            <img src="IMG_20190603_055208.jpg" alt="">
+          </a>
+
+          <a href="IMG_20190603_051829.jpg" class="image">
+            <img src="IMG_20190603_051829.jpg" alt="">
+          </a>
+
+          <a href="IMG_0464.jpg" class="image">
+            <img src="IMG_0464.jpg" alt="">
+          </a>
+
+          <a href="IMG_20180526_124036.jpg" class="image">
+            <img src="IMG_20180526_124036.jpg" alt="">
+          </a>
+
+          <a href="IMG_20181029_112650.jpg" class="image">
+            <img src="IMG_20181029_112650.jpg" alt="">
+          </a>
+
+          <a href="IMG_20181029_124011.jpg" class="image">
+            <img src="IMG_20181029_124011.jpg" alt="">
+          </a>
+
+          <a href="IMG_20181029_112132.jpg" class="image">
+            <img src="IMG_20181029_112132.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+            
+        </div>
+      </div>
+				
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="collapsenav.js"></script>
+	<script type="text/javascript" src="slider.js"></script>
+
+</body>
+</html>
